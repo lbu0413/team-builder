@@ -36,37 +36,36 @@ function Form(){
        
         <form onSubmit={onSubmit}>
             <label>name
-
-            <input 
-            type="text" 
-            placeholder="enter your name" 
-            name="name"
-            value={formValues.name}
-            onChange={onChange}/>
+                <input 
+                type="text" 
+                placeholder="enter your name" 
+                name="name"
+                value={formValues.name}
+                onChange={onChange}/>
             </label>
             <br></br>
 
             <label>email
-            <input 
-            type="email" 
-            placeholder="enter your email"
-            name="email"
-            onChange={onChange}
-            value={formValues.email}/>
+                <input 
+                type="email" 
+                placeholder="enter your email"
+                name="email"
+                onChange={onChange}
+                value={formValues.email}/>
             </label>
             <br></br>
 
             <label>role
-            <select 
-            name="role"
-            value={formValues.role}
-            onChange={onChange}
-            >
-                <option>--select your role--</option>
-                <option value="F.Engineer">frontend engeineer</option>
-                <option value="B.Engineer">backend engineer</option>
-                <option value="Designer">designer</option>
-            </select>
+                <select 
+                name="role"
+                value={formValues.role}
+                onChange={onChange}
+                >
+                    <option>--select your role--</option>
+                    <option value="F.Engineer">frontend engeineer</option>
+                    <option value="B.Engineer">backend engineer</option>
+                    <option value="Designer">designer</option>
+                </select>
             </label>
             <br></br>
             <button>Submit</button>
